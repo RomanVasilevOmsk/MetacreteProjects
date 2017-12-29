@@ -1,0 +1,95 @@
+.main-screen
+  background-image url("../images/main-bg.jpg")
+  background-repeat no-repeat
+  background-size cover
+  background-position-y 100px
+  min-height 950px
+  @media (min-width: 1010px) and (max-width: 1200px)
+    background-position-x -150px
+  @media (min-width: 700px) and (max-width: 1010px)
+    background-position-x -260px
+
+  &__wrapper
+    width 100%
+    position relative
+
+  & .fp-tableCell
+    display block
+
+  &__help-title
+    background-image: url("../images/help-title-ico.png")
+    background-repeat no-repeat
+    margin-top 100px
+    padding-top 12px
+    padding-bottom 12px
+    text-transform uppercase
+    text-align left
+    float right
+    font-size 42px
+    padding-right 41px
+    letter-spacing 0.03em
+    line-height 1.3em
+    &-wrapper
+      width 88%
+      float left
+      @media (max-width: 1150px)
+        width 100%
+        float none
+    @media (max-width: 1150px)
+      padding-right 2px
+    @media (max-width: 995px)
+      font-size 32px
+    @media (max-width: 768px)
+      font-size 22px
+      text-align center
+
+
+  &__help-block
+    background-image: url("../images/main-screen-form-bg.png")
+    background-repeat no-repeat
+    background-size contain
+    max-width 640px
+    padding 20px 54px 184px 0px
+    float right
+    margin-top -1px
+    @media (max-width: 768px)
+      float none
+      margin 0 auto
+      padding 20px 54px 130px 0
+      background-size 100% 100%
+    @media (max-width: 500px)
+      background-image none
+      padding 0px 54px 30px 0
+
+
+
+  &__help-list
+    color #40230d
+    list-style: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.9em;
+    padding-left: 48px;
+    @media (max-width: 500px)
+      font-size: 16px;
+      color #fff
+      font-weight: 400;
+
+  &__right-wrapper
+    width 88%
+    float left
+    @media (max-width: 768px)
+      width 100%
+
+
+  &__help
+    //&-title
+    //  font-size 42px
+    &-list
+      list-style none
+
+
+  &__text-content
+    font-size 30px
+
+

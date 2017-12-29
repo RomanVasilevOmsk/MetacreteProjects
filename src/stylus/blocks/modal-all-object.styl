@@ -1,0 +1,174 @@
+.modal-all-objects
+  max-width 1200px
+  width 92%
+  max-height 570px
+  padding 30px 20px 50px 20px
+  background-color #fff
+  text-align center
+  position fixed
+  top 0
+  bottom 0
+  left 0
+  right 0
+  margin auto
+  z-index 1000
+  color #65b2e4
+  display none
+  //background-image: url("../images/modal-all-objects-bg.jpg")
+  //background-repeat no-repeat
+  //background-size cover
+  @media screen and (max-width: 600px)
+    max-height 90%
+
+  &__title
+    color #40230d
+    font-weight 400
+    text-transform uppercase
+    font-size 26px
+    margin 18px 0 0 47px
+    text-align left
+    @media screen and (max-width: 600px)
+      margin 0 auto
+      font-size 15px
+      padding-right 20px
+
+  &__title-min
+    color #40230d
+    font-weight 400
+    font-size 26px
+    margin 8px 0 11px 47px
+    text-align left
+    @media screen and (max-width: 600px)
+      margin 0 auto
+      font-size 15px
+      padding-right 30px
+  &__close
+    position absolute
+    right 8px
+    top 14px
+    width 32px
+    height 32px
+    opacity 0.4
+    &:hover
+      opacity 1
+    &:before, &:after
+      position absolute
+      left 15px
+      content ' '
+      height 20px
+      width 2px
+      background-color #40230d
+
+    &:before
+      transform rotate(45deg)
+
+    &:after
+      transform rotate(-45deg)
+
+
+table
+  max-width: 1110px;
+  max-height: 342px;
+  border-top: 1px solid #40230d;
+  border-bottom: 1px solid #40230d;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+  overflow-y: scroll;
+  max-height: 365px;
+  display: inline-block;
+  &::-webkit-scrollbar-button
+    background-image url('')
+    background-repeat:no-repeat
+    width 5px
+    height 0px
+  &::-webkit-scrollbar-track
+    background-color rgba(64, 35, 13, 0.5);
+  &::-webkit-scrollbar-thumb
+    -webkit-border-radius 0px
+    border-radius 0px
+    background-color #40230d
+  &::-webkit-scrollbar-thumb:hover
+    background-color #40230d
+  &::-webkit-resizer
+    background-image url('')
+    background-repeat no-repeat
+    width 4px
+    height 0px
+  &::-webkit-scrollbar
+    width: 4px
+table thead tr{
+  color: #40230d;
+  background-color: rgba(64, 35, 13, 0.5);
+}
+table tr {
+  background: none;
+  color: #40230d;
+  font-weight: 300;
+  border: 1px solid #40230d;
+  padding: .35em;
+}
+table tr:first-child {
+  border-top: none;
+}
+table tr:last-child {
+  border-bottom: none;
+}
+table th,
+table td {
+  padding: .625em;
+  text-align: left;
+  border-right: 1px solid;
+}
+table tr:nth-child(even) {
+  background-color: rgba(64, 35, 13, 0.25);
+}
+table th {
+  font-weight: 400;
+  font-size: .85em;
+  text-transform: uppercase;
+  border-right: 1px solid;
+}
+@media screen and (max-width: 600px) {
+  table caption {
+    font-size: 1.3em;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  table tr:nth-child(even) {
+    background: none;
+  }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+    border-right: 0;
+  }
+  table td:before {
+    content: attr(aria-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+
+}
+@media screen and (max-width: 380px) {
+  table {
+    max-height: 40%;
+    margin-top: 26px;
+  }
+}

@@ -1,0 +1,34 @@
+.questions
+  width 100%
+  background-image url("../images/questions-bg.jpg")
+  background-repeat no-repeat
+  background-size cover
+  min-height 800px
+  @media (max-width:995px)
+    min-height 600px
+  @media (max-width:500px)
+    background none
+    min-height 435px
+  &__wrapper
+    max-width 1200px
+    margin 0 auto
+    color #40230d
+
+  &__right
+    width 50%
+    float right
+    @media (max-width:995px)
+      width 100%
+      float none
+
+  &__title
+    font-size 42px
+    font-weight 300
+    text-transform uppercase
+    margin 30px 0 0 23px
+    @media (max-width:995px)
+      padding-top 30px
+      margin 0
+      text-align center
+    @media (max-width:500px)
+      font-size 32px

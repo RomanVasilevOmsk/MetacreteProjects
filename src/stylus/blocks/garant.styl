@@ -1,0 +1,111 @@
+.garant
+  width 100%
+  background-image url("../images/garant-bg.jpg")
+  background-repeat no-repeat
+  background-size cover
+  min-height 700px
+  @media (max-width:768px)
+    min-height 1000px
+  @media (max-width:500px)
+    min-height 950px
+
+  &__wrapper
+    max-width 1200px
+    margin 0 auto
+    color #fff
+
+
+  &__left
+    width 50%
+    float left
+    @media (max-width:768px)
+      width 100%
+      float none
+    & img
+      margin 57px auto 0 auto
+      display block
+      @media (max-width:995px)
+        max-width 80%
+      @media (max-width:768px)
+        padding-top 50px
+      @media (max-width:645px)
+        max-width 50%
+
+  &__title
+    font-weight 300
+    font-size 33px
+    text-transform uppercase
+    @media (max-width: 1200px)
+      font-size 28px
+    @media (max-width:995px)
+      font-size 24px
+    &-bold
+      font-weight  400
+      font-size 42px
+      line-height 1.3em
+      text-transform uppercase
+      @media (max-width: 1200px)
+        font-size 35px
+      @media (max-width:995px)
+        font-size 28px
+    &-wrapper
+      margin-top 33px
+      @media (max-width:768px)
+        text-align center
+
+
+
+
+  &__list
+    list-style none
+    margin 0
+    padding 0
+    @media (max-width:768px)
+      margin 0 auto
+      width 50%
+    @media (max-width:645px)
+      width 70%
+    &-title
+      font-size 30px
+      font-weight 400
+      margin 28px 0 0 0
+      @media (max-width: 1200px)
+        font-size 26px
+      @media (max-width:768px)
+        text-align center
+    &-item
+      position relative
+      font-weight 400
+      margin 17px 0 0 25px
+      font-size 21px
+      @media (max-width: 1200px)
+        font-size 19px
+      @media (max-width:995px)
+        font-size 15px
+      &:before
+          content "―"
+          position absolute
+          left -20px
+          top -1px
+
+  &__desc
+    font-weight 400
+    float left
+    font-size 30px
+    padding-top 60px
+    @media (max-width: 1200px)
+      font-size 28px
+    @media (max-width:995px)
+      font-size 24px
+    @media (max-width:768px)
+      text-align center
+    @media (max-width:370px)
+      font-size 20px
+      padding-top 30px
+
+  &__right
+    width 50%
+    float right
+    @media (max-width:768px)
+      width 100%
+      float none

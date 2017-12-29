@@ -1,0 +1,145 @@
+.benefit
+  background-color #ebebea
+  &__wrapper
+    margin 0 auto
+    width 100%
+    background-image: url("../images/benefit-bg.jpg")
+    background-repeat no-repeat
+    background-position 49% 49%
+    position relative
+    min-height 870px
+    @media (max-width: 768px)
+      min-height 750px
+    @media (max-width: 385px)
+      margin-top 14px
+    @media (max-width: 357px)
+      margin-top 40px
+    @media (max-width: 353px)
+      margin-top 175px
+    @media (max-width: 318px)
+      margin-top 185px
+  &__title
+    font-weight 300
+    text-transform uppercase
+    &-wrapper
+      margin 0 auto
+      display block
+      padding 10px 0
+      text-align center
+      &--top
+        top 0
+        background-color #40230d
+        & .benefit__title
+          font-size 30px
+          @media (max-width: 768px)
+            font-size 25px
+      &--bottom
+        bottom 0
+        max-width 100%
+        background-color #a67f4f
+        padding 27px 0
+        width 100%
+        position absolute
+        & .benefit__title
+          max-width 800px
+          margin 0 auto
+          font-size 34px
+          @media (max-width: 768px)
+            font-size 22px
+
+  &__left
+    padding-left 25%
+    @media (max-width: 995px)
+      padding-left 10%
+    &-wrapper
+      width 50%
+      float left
+      position absolute
+      top 15%
+      @media (max-width: 500px)
+        width 46%
+
+
+
+  &__right
+    text-align right
+    padding-right  25%
+    @media (max-width: 995px)
+      padding-right 10%
+    &-wrapper
+      width 50%
+      float right
+      //height calc(100vh - 280px)
+      position absolute
+      top 15%
+      right 0
+      @media (max-width: 500px)
+        width 46%
+
+  &__title-block
+    font-size 30px
+    font-weight 400
+    text-transform uppercase
+    color #40230d
+    border-bottom 1px solid
+    padding-bottom 2px
+    &--left
+      max-width 335px
+      margin-bottom 5%
+      @media (max-width: 768px)
+        max-width 250px
+        margin-top 36px
+      @media (max-width: 520px)
+        font-size 23px
+    &--right
+      max-width 300px
+      margin-bottom 0.4%
+      float right
+      @media (max-width: 768px)
+        max-width 250px
+        margin-top 36px
+        color #fff
+      @media (max-width: 520px)
+        font-size 23px
+  &__desc
+    font-size 19px
+    max-width 290px
+    background-color #a67f4f
+    border-radius 7px
+    line-height 1.23em
+    clear both
+    position relative
+    @media (max-width: 768px)
+      font-size 17px
+    @media (max-width: 520px)
+      font-size 15px
+    @media (max-width: 450px)
+      font-size 13px
+    &--left
+      float left
+      margin 5% 0 0 0
+      height 100%
+      background url(../images/base64/benefit-left-bg.png) center
+      background-size:100% 100%
+      background-repeat no-repeat
+      padding 14px 21px 25px 17px
+      &:after
+        content ""
+        display block
+        width 27px
+        height 15px
+        position absolute
+        right 0px
+        bottom 0px
+        //background-image: url("data:../images/base64/benefit-desc-bg.png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAPCAYAAAAVk7TYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowN2FkM2NkOS01OTNiLWM4NGEtYTdlNy05YThiZTE0YTFjZjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NkFFOEIxOUREMzRDMTFFNzkzRUQ5RjVGQkMzQUZGOTIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NkFFOEIxOUNEMzRDMTFFNzkzRUQ5RjVGQkMzQUZGOTIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODM4NzE0N2MtOTEzZi0yYzQ2LTk4YzItZmFmZmViMDM0ZjA0IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjA3YWQzY2Q5LTU5M2ItYzg0YS1hN2U3LTlhOGJlMTRhMWNmMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpeKfaEAAAEQSURBVHjaYtzS4P2fgXxwH4j1vOu3fCFGMRMDZaCdWIuoYVkoKYoptcx1a6OPBb0sA4H5pFiWCMRvKbBMA+i7YmItWwDExkC8DYj/kWlhG9BCeWKD8SEQewNxBhCfJsMyNiDeSGqczQbiACAuA+IvJFqoD/TddFITyDMg7gZiUyj9kwQLM4AWlpOTGm8AMUijMhCvBuIXxGZ0oIXx5CR9UFH2FIjDgNgIiCcB8RkCehhBiQ5oYRKGBLBsJDUx8AJxAtTyQCDmx6O2FYjrgUXaX3Iz9WcgngzNn55AHA7ES4H4NRa11aAsBfSlHrk+QwFAVzMADeMAMsWBmBOIrYDYDoh1gFgMiKWA+B7IQQABBgCh7kELtGijZgAAAABJRU5ErkJggg==")
+        //background-position 0 -2px
+
+    &--right
+      float right
+      margin 9.2% 0 0 0
+      height 100%
+      background url(../images/base64/benefit-right-bg.png) center
+      background-size:100% 100%
+      background-repeat no-repeat
+      padding 14px 21px 25px 28px
+

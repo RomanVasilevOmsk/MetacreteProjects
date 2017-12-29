@@ -1,0 +1,36 @@
+<div class="modal-nodes modal-nodes--3 js-modal" id="js-modal-nodes3">
+    <h2 class="modal-nodes__title">Узлы ремонта ж\б балок:</h2>
+    <ul class="modal-nodes__list">
+        <li class="modal-nodes__items" data-nodes="3.1">Продольного и поперечного перекрытия</li>
+        <li class="modal-nodes__items" data-nodes="3.2">С оголениями и разрывом арматуры (хомутов)</li>
+        <li class="modal-nodes__items" data-nodes="3.3">Боковой грани, разрушенной на глубину до 100мм, с оголением и коррозией арматурных стержней</li>
+        <li class="modal-nodes__items" data-nodes="3.4">Проход через плиту монолитного ж/б балочного перекрытия (вырубленный бетон с разрывом арматуры)</li>
+    </ul>
+    <div class="modal-nodes__image-block">
+        <img src="./images/nodes/3.1.jpg" class="modal-nodes__image" alt="nodes-image">
+    </div>
+
+
+    <form class="modal-nodes-form" action="succes.php" method="post">
+        <h3 class="modal-nodes-form__title">Получите готовое решение уже сейчас! В PDF или Autocad</h3>
+        <p class="modal-nodes-form__desc-top">Мы свяжемся с вами для обсуждения деталей</p>
+        <div class="modal-nodes-form__control">
+            <input class="modal-nodes-form__phone" type="text" name="phone" required="" placeholder="Введите ваш телефон">
+            <button class="button button-nodes-modal" type="submit">Получить готовое решение</button>
+        </div>
+        <p class="modal-nodes-form__desc">Нажимая на кнопку, я даю <a href="soglashenie.pdf" target="_blank" class="modal-nodes-form__link">cогласие на обработку персональных данных</a></p>
+
+        <input type="hidden" name="forma" value="Получить готовые узлы ж\б балок">
+        <input type="hidden" name="order_type" value="2">
+        <input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+        <input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+        <input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+        <input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+        <input type="hidden" name="utm_placement" value="<?php echo isset($_GET['utm_placement']) ? $_GET['utm_placement'] : '' ;?>">
+        <input type="hidden" name="utm_creative" value="<?php echo isset($_GET['utm_creative']) ? $_GET['utm_creative'] : '' ;?>">
+        <input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+        <input type="hidden" value="8838" name="time_spend"><input type="hidden" value="false" name="mobile">
+    </form>
+
+    <a href="#" class="modal__close js-modal-close"></a>
+</div>

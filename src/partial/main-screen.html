@@ -1,0 +1,35 @@
+ <div class="main-screen__wrapper">
+        <div class="main-screen__help-title-wrapper">
+            <h2 class="main-screen__help-title">Бесплатно поможем в решении<br> задач проектирования узлов ремонта</h2>
+        </div>
+
+        <div class="main-screen__right-wrapper">
+            <div class="main-screen__help-block">
+                <ul class="main-screen__help-list">
+                    <li class="main-screen__help-item">― Учтем ВСЕ Ваши интересы</li>
+                    <li class="main-screen__help-item">― Предоставим нужные узлы ремонта и гидроизоляции в формате Autocad</li>
+                    <li class="main-screen__help-item">― Нарисуем новые узлы ремонта и гидроизоляции, если их нет в нашей базе. Бесплатно</li>
+                    <li class="main-screen__help-item">― Гарантируем прохождение гос. экспертизы с нашими материалами</li>
+                    <li class="main-screen__help-item">― Решим ваши прочие проблемы, чтобы вы остались довольны от работы с нами</li>
+                </ul>
+            </div>
+            <form class="main-form" action="succes.php" method="post">
+                <h4 class="main-form__title">Получить консультацию <span class="main-form__title-span">бесплатно</span></h4>
+                <div class="main-form__line"></div>
+                <p class="main-form__desc"><?= timeUtm();?></p>
+                <input class="main-form__phone" type="text" name="phone" required="" placeholder="Введите ваш телефон">
+                <button class="button-main-form" type="submit">Получить консультацию</button>
+                <p class="main-form__desc">Нажимая на кнопку, я даю cогласие<br><a href="soglashenie.pdf" target="_blank" class="main-form__link">на обработку персональных данных</a></p>
+                <input type="hidden" name="forma" value="Получить консультацию">
+                <input type="hidden" name="order_type" value="2">
+                <input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+                <input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+                <input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+                <input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+                <input type="hidden" name="utm_placement" value="<?php echo isset($_GET['utm_placement']) ? $_GET['utm_placement'] : '' ;?>">
+                <input type="hidden" name="utm_creative" value="<?php echo isset($_GET['utm_creative']) ? $_GET['utm_creative'] : '' ;?>">
+                <input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+                <input type="hidden" value="8838" name="time_spend"><input type="hidden" value="false" name="mobile">
+            </form>
+        </div>
+    </div>

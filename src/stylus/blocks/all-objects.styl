@@ -1,0 +1,99 @@
+.all-objects
+  width 100%
+  background-image url("../images/all-objects-bg.jpg")
+  background-repeat no-repeat
+  background-size cover
+  position relative
+  min-height 615px
+  @media (max-width: 1090px)
+    min-height 555px
+  @media (max-width: 860px)
+    padding-bottom 50px
+
+  &__wrapper
+    max-width 1200px
+    margin 0 auto
+
+
+  &__left
+    width 50%
+    float left
+    @media (max-width: 860px)
+      width 100%
+      float none
+
+  &__right
+    width 50%
+    float right
+    @media (max-width: 860px)
+      width 100%
+      float none
+  &__count
+    color #fff
+    font-size 36em
+    font-weight 400
+    text-align center
+    margin -40px 0 0 0
+    display block
+    letter-spacing -0.03em
+    @media (max-width: 1090px)
+      font-size 31em
+    @media (max-width: 860px)
+      font-size 28em
+    @media (max-width: 492px)
+      font-size 20em
+    @media (max-width: 370px)
+      font-size 15em
+
+
+  &__desc
+    font-weight 400
+    text-transform uppercase
+    font-size 24px
+    max-width 450px
+    margin 100px 0 0 80px
+    letter-spacing 0.02em
+    line-height 1.4em
+    @media (max-width: 1090px)
+      max-width 355px
+      margin 65px 0 0 80px
+      font-size 20px
+    @media (max-width: 860px)
+      margin 0 auto
+    @media (max-width: 500px)
+      text-align center
+
+
+
+  &__show-modal
+    position absolute
+    color #a67f4f
+    background-color #fff
+    border 3px solid #fff
+    bottom 125px
+    max-width 290px
+    padding 19px 72px
+    text-align center
+    margin-left 79px
+    text-decoration none
+    font-size 26px
+    -webkit-transition-property background
+    -webkit-transition-duration 0.5s
+    -webkit-transition-timing-function ease
+    &:hover
+      cursor pointer
+      text-decoration none
+      color #fff
+      background none
+      border 3px solid #fff
+      -webkit-transition-property background
+      -webkit-transition-duration 0.5s
+      -webkit-transition-timing-function ease
+    @media (max-width: 1090px)
+      font-size 18px
+    @media (max-width: 860px)
+      position inherit
+      margin 15px auto 0 auto
+      display block
+      max-width 200px
+      padding 19px 30px

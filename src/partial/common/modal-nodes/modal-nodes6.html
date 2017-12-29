@@ -1,0 +1,87 @@
+<div class="modal-nodes modal-nodes--6 js-modal" id="js-modal-nodes6">
+    <h2 class="modal-nodes__title modal-nodes__title-all">Все узлы ремонта:</h2>
+    <div class="modal-nodes__all-wrapper">
+        <div class="modal-nodes__list-wrapper">
+            <h4 class="modal-nodes__all-list">Узлы ремонта ж\б колонн:</h4>
+            <ul class="modal-nodes__list modal-nodes__list--all">
+                <li class="modal-nodes__items-all">C оголенной поверхностью прокорродировавшей
+                    арматуры (без усиления арматуры)</li>
+                <li class="modal-nodes__items-all">C коррозионной трещиной</li>
+                <li class="modal-nodes__items-all">C оголением и разрывом арматуры (хомутов)</li>
+                <li class="modal-nodes__items-all">C установкой дополнительной арматуры</li>
+            </ul>
+        </div>
+
+        <div class="modal-nodes__list-wrapper">
+            <h4 class="modal-nodes__all-list">Узлы ремонта ж\б поверхностей и элементов:</h4>
+            <ul class="modal-nodes__list modal-nodes__list--all">
+                <li class="modal-nodes__items-all">Фасадов сооружений</li>
+                <li class="modal-nodes__items-all">Слоем до 20 мм</li>
+                <li class="modal-nodes__items-all">Сборных бетонных элементов</li>
+                <li class="modal-nodes__items-all">При выполнении ремонтных работ в интервале
+                    темпертур от –10 °С до +5 °С
+                </li>
+            </ul>
+        </div>
+
+        <div class="modal-nodes__list-wrapper">
+            <h4 class="modal-nodes__all-list">Узлы ремонта ж\б плит:</h4>
+            <ul class="modal-nodes__list modal-nodes__list--all">
+                <li class="modal-nodes__items-all">С трещинами вдоль арматурных стержней
+                    (ширина раскрытия до 3 мм), а также с оголенной
+                    поверхностью прокорродировавшей арматуры</li>
+                <li class="modal-nodes__items-all">С заменой промасленного защитного слоя бетона</li>
+                <li class="modal-nodes__items-all">С восстановлением нижней грани</li>
+            </ul>
+        </div>
+
+        <div class="modal-nodes__list-wrapper">
+            <h4 class="modal-nodes__all-list">Узлы ремонта прочих поверхностей:</h4>
+            <ul class="modal-nodes__list modal-nodes__list--all">
+                <li class="modal-nodes__items-all">Бетона с разрушением сечения плиты до 100% с оголением арматуры</li>
+                <li class="modal-nodes__items-all">Сквозных трещин по кирпичной кладке (ширина раскрытия до 10 мм)</li>
+                <li class="modal-nodes__items-all">Потолочной поверхности перекрытия слоем до 50 мм</li>
+                <li class="modal-nodes__items-all">Плиты пола</li>
+                <li class="modal-nodes__items-all">Узел установки болтов (анкеров) в существующий фундамент</li>
+            </ul>
+        </div>
+
+        <div class="modal-nodes__list-wrapper">
+            <h4 class="modal-nodes__all-list">Узлы ремонта ж\б балок:</h4>
+            <ul class="modal-nodes__list modal-nodes__list--all">
+                <li class="modal-nodes__items-all">Продольного и поперечного перекрытия</li>
+                <li class="modal-nodes__items-all">С оголениями и разрывом арматуры (хомутов)</li>
+                <li class="modal-nodes__items-all">Боковой грани, разрушенной на глубину до 100 мм,
+                    с оголением и коррозией арматурных стержней</li>
+                <li class="modal-nodes__items-all">Проход через плиту монолитного ж/б балочного
+                    перекрытия (вырубленный бетон с разрывом арматуры)
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <form class="modal-nodes-form modal-nodes-form-all" action="succes.php" method="post">
+        <h3 class="modal-nodes-form__title modal-nodes-form__title-all">Получите готовое решение уже сейчас! В PDF или Autocad</h3>
+        <p class="modal-nodes-form__desc-top modal-nodes-form__desc-top-all">Мы свяжемся с вами для обсуждения деталей</p>
+        <div class="modal-nodes-form__control">
+            <input class="modal-nodes-form__phone modal-nodes-form__phone-all" type="text" name="phone" required="" placeholder="Введите ваш телефон">
+            <button class="button button-nodes-modal button-nodes-modal-all" type="submit">Получить готовое решение</button>
+        </div>
+        <p class="modal-nodes-form__desc modal-nodes-form__desc-all">Нажимая на кнопку, я даю <a href="soglashenie.pdf" target="_blank" class="modal-nodes-form__link modal-nodes-form__link-all">cогласие на обработку персональных данных</a></p>
+
+        <input type="hidden" name="forma" value="Получить готовые узлы (Все решения)">
+        <input type="hidden" name="order_type" value="2">
+        <input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+        <input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+        <input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+        <input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+        <input type="hidden" name="utm_placement" value="<?php echo isset($_GET['utm_placement']) ? $_GET['utm_placement'] : '' ;?>">
+        <input type="hidden" name="utm_creative" value="<?php echo isset($_GET['utm_creative']) ? $_GET['utm_creative'] : '' ;?>">
+        <input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+        <input type="hidden" value="8838" name="time_spend"><input type="hidden" value="false" name="mobile">
+    </form>
+
+    <a href="#" class="modal__close modal__close-all js-modal-close"></a>
+
+    <a href="#" class="modal__close modal__close-all js-modal-close"></a>
+</div>

@@ -1,0 +1,37 @@
+<div class="nodes__wrapper" id="constructorknot">
+            <h2 class="nodes__title-big">У нас есть 20 типовых узлов ремонта.<br> Мы можем дать их вам БЕСПЛАТНО.</h2>
+        <div class="nodes__left-wrapper">
+            <h3 class="nodes__title-small">Изучите узлы ремонта, что вы можете получить уже сегодня</h3>
+            <div class="nodes__show-modal-wraper">
+                <a class="nodes__show-modal js-show-modal" href="#js-modal-nodes1">Ж\б колонны</a>
+                <a class="nodes__show-modal js-show-modal" href="#js-modal-nodes2">Ж\б плиты</a>
+                <a class="nodes__show-modal js-show-modal" href="#js-modal-nodes3">Ж\б балки</a>
+                <a class="nodes__show-modal js-show-modal" href="#js-modal-nodes4">Ж\б поверхности и элементы</a>
+                <a class="nodes__show-modal js-show-modal" href="#js-modal-nodes5">Прочие поверхности</a>
+                <a class="nodes__show-modal js-show-modal" href="#js-modal-nodes6">ПОСМОТРЕТЬ ВСЕ УЗЛЫ</a>
+            </div>
+        </div>
+        <div class="nodes__right-wrapper">
+            <form class="nodes-form" action="succes.php" method="post">
+                <h4 class="nodes-form__title">Получить готовое решение <span class="nodes-form__title-span">бесплатно</span></h4>
+                <div class="nodes-form__line"></div>
+                <p class="nodes-form__desc1"><?= timeUtm();?></p>
+                <input class="nodes-form__phone" type="text" name="phone" required="" placeholder="Введите ваш телефон">
+                <button class="button-main-form button-main-form-nodes" type="submit">Получить решение</button>
+                <p class="nodes-form__desc">Нажимая на кнопку, я даю <br><a href="soglashenie.pdf" target="_blank" class="main-form__link">cогласие на обработку персональных данных</a></p>
+                <input type="hidden" name="forma" value="Получить готовое решение+">
+                <input type="hidden" name="order_type" value="2">
+                <input type="hidden" name="utm_source" value="<?php echo isset($_GET['utm_source']) ? $_GET['utm_source'] : '' ;?>">
+                <input type="hidden" name="utm_medium" value="<?php echo isset($_GET['utm_medium']) ? $_GET['utm_medium'] : '' ;?>">
+                <input type="hidden" name="utm_campaign" value="<?php echo isset($_GET['utm_campaign']) ? $_GET['utm_campaign'] : '' ;?>">
+                <input type="hidden" name="utm_term" value="<?php echo isset($_GET['utm_term']) ? $_GET['utm_term'] : '' ;?>">
+                <input type="hidden" name="utm_placement" value="<?php echo isset($_GET['utm_placement']) ? $_GET['utm_placement'] : '' ;?>">
+                <input type="hidden" name="utm_creative" value="<?php echo isset($_GET['utm_creative']) ? $_GET['utm_creative'] : '' ;?>">
+                <input type="hidden" name="utm_content" value="<?php echo isset($_GET['utm_content']) ? $_GET['utm_content'] : '' ;?>">
+                <input type="hidden" value="8838" name="time_spend"><input type="hidden" value="false" name="mobile">
+            </form>
+        </div>
+        <h2 class="nodes__title-bottom">Не нашли нужный узел?</h2>
+        <p class="nodes__desc">Мы сами разработаем для вас технические решения по ремонту, гидроизоляции и восстановлению железобетонных конструкций.
+        Вы легко сможете использовать их в вашем проекте.</p>
+    </div>
